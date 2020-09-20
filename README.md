@@ -1,12 +1,15 @@
 #How to Run Tests
 
-* Install all dependencies
- `pip install pipenv`
- `pipenv install requests`
- `pipenv install json`
- `pipenv install jsonpath_ng`
- `pipenv install pytest`
+* Import the project<br />
+ `Use Pycharm to import the project`
 
-* Run All Tests
-`pipenv shell`
-`pytest -v tests`
+* Install all dependencies <br />
+ `pip install pipenv` <br />
+ `pipenv install requests` <br />
+ `pipenv install json` <br />
+ `pipenv install jsonpath_ng` <br />
+ `pipenv install pytest` 
+
+* Run All Tests <br />
+ `pipenv shell` <br />
+ `pytest -v tests`
