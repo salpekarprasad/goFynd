@@ -2,7 +2,6 @@ import requests
 import json
 from jsonpath_ng import parse
 import time
-from fake_useragent import UserAgent
 
 
 def create_New_Employee(fixturefilepath):

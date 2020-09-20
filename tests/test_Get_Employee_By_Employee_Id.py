@@ -2,13 +2,10 @@ import requests
 import json
 from jsonpath_ng import parse
 import time
-from fake_useragent import UserAgent
 
 def get_Employee(empId,emptyUserAgent = False) :
     base_url = "http://dummy.restapiexample.com/api/v1/employee/"
-    user_agent = {"User-Agent": UserAgent().random }
-    print(user_agent)
-    #user_agent = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9"}
+    user_agent = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9"}
     header = {"Content-Type": "application/json", "Accept": "*/*"}
     if emptyUserAgent == False :
         header.update(user_agent)
