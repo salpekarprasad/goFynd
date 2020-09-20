@@ -43,7 +43,7 @@ def update_Employee(fixturefilepath,empId,emptyUserAgent = False) :
     create_request = json.loads(f.read())
     return requests.put(update_employee_url,create_request,headers = header)
 
-def test_Delete_Newly_Created_Employee():
+def test_CRUD_Operations_Employee():
     time.sleep(1)
 
     create_response = create_New_Employee("Fixtures/createEmployeeDetails.json")

@@ -1,7 +1,6 @@
 import requests
 import json
 from jsonpath_ng import parse
-import time
 
 
 def create_New_Employee(fixturefilepath) :
@@ -31,7 +30,6 @@ def delete_Employee(empId,emptyUserAgent = False) :
     return requests.delete(delete_employee_url,headers = header)
 
 def test_Delete_Newly_Created_Employee() :
-    time.sleep(1)
     create_response = create_New_Employee("Fixtures/createEmployeeDetails.json")
     assert create_response.status_code == 200
     empl_id = parse("$.data.id")
