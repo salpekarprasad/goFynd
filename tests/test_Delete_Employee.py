@@ -13,7 +13,6 @@ def create_New_Employee(fixturefilepath) :
 def get_Employee(empId,emptyUserAgent = False) :
     base_url = "http://dummy.restapiexample.com/api/v1/employee/"
     user_agent = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9"}
-    print(user_agent)
     header = {"Content-Type": "application/json", "Accept": "*/*"}
     if emptyUserAgent == False :
         header.update(user_agent)
@@ -24,7 +23,6 @@ def get_Employee(empId,emptyUserAgent = False) :
 def delete_Employee(empId,emptyUserAgent = False) :
     base_url = "http://dummy.restapiexample.com/api/v1/delete/"
     user_agent = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9"}
-    print(user_agent)
     header = {"Content-Type": "application/json", "Accept": "*/*"}
     if emptyUserAgent == False:
         header.update(user_agent)
