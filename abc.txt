@@ -1,0 +1,9 @@
+###### Requirements without Version Specifiers ######`
+
+pytest
+requests>=2.24.0
+jsonpath_ng
+requests_toolbelt
+fake_useragent
+
+###### Requirements with Version Specifiers ######`
